@@ -113,7 +113,7 @@ function Dock({
           mouseX.set(Infinity);
         }}
         className={cn(
-          'mx-auto flex w-fit gap-4 rounded-2xl bg-gray-50 px-4 dark:bg-neutral-900',
+          'mx-auto flex w-fit gap-1.5 md:gap-4 rounded-2xl bg-gray-50 px-4 dark:bg-neutral-900',
           className
         )}
         style={{ height: panelHeight }}
@@ -135,6 +135,18 @@ function DockItem({ children, className, onClick }: DockItemProps) {
 
   const isHovered = useMotionValue(0);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => setIsMobile(window.innerWidth < 768);
+    checkScreen();
+    window.addEventListener('resize', checkScreen);
+    return () => window.removeEventListener('resize', checkScreen);
+  }, []);
+
+  const baseWidth = isMobile ? 36 : 40;             // smaller on mobile
+  const hoverMagnification = isMobile ? 60 : magnification; // reduce magnification on mobile
+
   const mouseDistance = useTransform(mouseX, (val) => {
     const domRect = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
     return val - domRect.x - domRect.width / 2;
@@ -143,7 +155,7 @@ function DockItem({ children, className, onClick }: DockItemProps) {
   const widthTransform = useTransform(
     mouseDistance,
     [-distance, 0, distance],
-    [40, magnification, 40]
+    [baseWidth, hoverMagnification, baseWidth]
   );
 
   const width = useSpring(widthTransform, spring);

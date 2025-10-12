@@ -5,7 +5,7 @@ import ProjectPage from "@/components/projects/projects-page";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-hidden">
       <HeroSection projectsLink="/#projects" />
       {/* <div className="h-screen"></div> */}
       <div id="projects">
@@ -14,6 +14,6 @@ export default function Home() {
       </div>
       <Experience />
       <Footer />
-    </>
+    </div>
   );
 }
