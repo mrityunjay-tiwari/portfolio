@@ -144,7 +144,7 @@ function DockItem({ children, className, onClick }: DockItemProps) {
     return () => window.removeEventListener('resize', checkScreen);
   }, []);
 
-  const baseWidth = isMobile ? 36 : 40;             // smaller on mobile
+  const baseWidth = isMobile ? 30 : 40;             // smaller on mobile
   const hoverMagnification = isMobile ? 60 : magnification; // reduce magnification on mobile
 
   const mouseDistance = useTransform(mouseX, (val) => {
