@@ -47,7 +47,7 @@ export default function Footer() {
           </Tooltip>
         </Link>
 
-        <Link href={"https://x.com/mrityunjay_18"} target="_blank">
+        <Link href={"https://www.linkedin.com/in/mrityunjay-tiwari-a81275190/"} target="_blank">
           <Tooltip>
             <TooltipTrigger>
               <span className="text-gray-600 hover:cursor-pointer">

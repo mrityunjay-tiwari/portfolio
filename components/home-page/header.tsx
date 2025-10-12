@@ -19,6 +19,7 @@ const menuItems = [
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const email = "mrityunjay.tiwari.apd22@itbhu.ac.in";
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -85,10 +86,11 @@ export const HeroHeader = () => {
                   asChild
                   size="sm"
                   className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
+                  onClick={() => (window.location.href = `mailto:${email}`)}
                 >
-                  <Link href="#">
-                    <span>Contact Me</span>
-                  </Link>
+                  
+                    <span className="hover:cursor-pointer">Contact Me</span>
+                  
                 </Button>
               </div>
             </div>

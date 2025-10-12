@@ -24,6 +24,7 @@ import {AppleStyleDock} from "./tech-stack";
 import {FaGripLinesVertical} from "react-icons/fa";
 import {TbMinusVertical} from "react-icons/tb";
 import PulseDot from "./flicker-badge";
+import EmailRedirectContactMeButton from "./email-redirect-button";
 
 const transitionVariants: {item: Variants} = {
   item: {
@@ -69,7 +70,7 @@ const rubik = Rubik({
   style: ["normal", "italic"],
 });
 
-export default function HeroSection() {
+export default function HeroSection({projectsLink} : {projectsLink : string}) {
   return (
     <>
       <main className="overflow-hidden">
@@ -194,15 +195,9 @@ export default function HeroSection() {
                 </TextEffect>
                 <div className="mt-5 space-x-4">
                   <Link href={""}>
-                    <Button
-                      size={"lg"}
-                      className="rounded-full text-black hover:text-white bg-linear-to-r from-gray-200 to-neutral-200 hover:from-yellow-400 hover:to-slate-900 transform transition duration-700 ease-in-out font-normal mt-8"
-                    >
-                      {" "}
-                      Contact Me <ArrowRight className="animate-pulse" />
-                    </Button>
+                    <EmailRedirectContactMeButton />
                   </Link>
-                  <Link href={"/#projects"}>
+                  <Link href={projectsLink}>
                     <Button
                       size={"lg"}
                       className="rounded-full text-white bg-linear-to-r from-slate-700 to-zinc-400 hover:from-yellow-400 hover:to-slate-900 transform transition duration-700 ease-in-out font-normal mt-8"
