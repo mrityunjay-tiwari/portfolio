@@ -148,6 +148,11 @@ function DockItem({ children, className, onClick }: DockItemProps) {
 
   const width = useSpring(widthTransform, spring);
 
+  type DockInjectedProps = {
+  width: MotionValue<number>;
+  isHovered: MotionValue<number>;
+};
+
   return (
     <motion.div
       ref={ref}
@@ -166,7 +171,7 @@ function DockItem({ children, className, onClick }: DockItemProps) {
       onClick={onClick}
     >
       {Children.map(children, (child) =>
-        cloneElement(child as React.ReactElement, { width, isHovered })
+        cloneElement(child as React.ReactElement<DockInjectedProps>, { width, isHovered })
       )}
     </motion.div>
   );
