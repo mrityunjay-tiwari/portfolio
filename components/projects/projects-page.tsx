@@ -1,14 +1,14 @@
 import { cn } from "@/lib/utils";
-import { CultCouncil, SomiConveyorBelt, SummarizeCard, YourBrainCard } from "./project-card";
+import { BrainCard, CultCouncil, SomiConveyorBelt, SummarizeCard, YourBrainCard } from "./project-card";
 import TypewriterTitle from "./project-title";
 
 export default function ProjectPage() {
   return(
-    <section className={cn(`min-h-screen flex flex-col justify-center items-center mt-20 mb-16 relative`)}>
+    <section className={cn(`min-h-screen flex flex-col justify-center items-center mt-20 mb-16 relative mx-5`)}>
       {/* <h1 className="mb-10">Selected Projects</h1> */}
       <TypewriterTitle />
       <div className="max-w-[950px] w-full mx-20 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-28 gap-y-14 place-items-center">
-        <YourBrainCard />
+        <BrainCard />
         <SummarizeCard />
         <SomiConveyorBelt />
         <CultCouncil />
