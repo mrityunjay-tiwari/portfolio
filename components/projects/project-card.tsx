@@ -103,65 +103,68 @@ export function YourBrainCard() {
 
 export function BrainCard() {
   return (
-    <div className="relative">
+    <div className="relative left-1 md:left-0">
       <CornerPlus />
-      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
+      <WobbleCard containerClassName="max-w-[91vw] col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
         {/* <Image alt="image" src={'https://ik.imagekit.io/mrityunjay/Screenshot%202025-07-30%20114911.png?updatedAt=1753857136729'} width={700} height={200} className="w-full h-auto rounded-md" /> */}
         <div className="w-full flex justify-center items-center">
           <CarouselDemoSomi />
         </div>
         {/* <div className="w-full flex justify-center items-center"><InfiniteSliderHoverSpeed /></div> */}
-        <div className="flex justify-between items-end">
-          <h2 className="max-w-80 mx-10 text-left text-balance text-base md:text-xl lg:text-2xl capitalize  pt-4 tracking-[-0.015em] text-black">
-            YourBrain
-          </h2>
-          <div className="flex gap-2.5 pr-12 mb-2 z-30">
-            <Tooltip>
-              <TooltipTrigger>
-                <Link
-                  href={"https://github.com/mrityunjay-tiwari/your-brain-be"}
-                  target="_blank"
-                >
-                  <Github className="w-4 h-4" />
-                </Link>
 
-                {/* <Button variant="outline">Hover</Button> */}
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>SourceCode</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger>
-                <Link href={"https://yourbrain.vercel.app/"} target="_blank">
-                  <LinkIcon className="w-4 h-4" />
-                </Link>
-                {/* <Button variant="outline">Hover</Button> */}
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Live Link</p>
-              </TooltipContent>
-            </Tooltip>
+        <div className="-ml-3.5 md:-ml-0">
+          <div className="flex justify-between items-end">
+            <h2 className="max-w-80 mx-10 text-left text-balance text-base md:text-xl lg:text-2xl capitalize  pt-4 tracking-[-0.015em] text-black">
+              YourBrain
+            </h2>
+            <div className="flex gap-2.5 pr-12 mb-2 z-30">
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={"https://github.com/mrityunjay-tiwari/your-brain-be"}
+                    target="_blank"
+                  >
+                    <Github className="w-4 h-4" />
+                  </Link>
+
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>SourceCode</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link href={"https://yourbrain.vercel.app/"} target="_blank">
+                    <LinkIcon className="w-4 h-4" />
+                  </Link>
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Live Link</p>
+                </TooltipContent>
+              </Tooltip>
+            </div>
           </div>
-        </div>
-        <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
-        <p className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
-          Hereby you can save all your YouTube and Twitter links categorically
-          with your personal note, further also can search, share, edit or
-          delete them.
-        </p>
-        <div className="mx-10 mt-7 gap-2 flex">
-          <Badge variant={"tech"}>React</Badge>
-          <Badge variant={"tech"}>Express</Badge>
-          <Badge variant={"tech"}>MongoDB</Badge>
-          <Badge variant={"tech"}>TypeScript</Badge>
-        </div>
-        <div className="mx-10 mt-1 gap-2 flex">
-          <Badge variant={"tech"}>TailwindCSS</Badge>
-          <Badge variant={"tech"}>NodeJS</Badge>
-        </div>
-        <div className="mx-10 mt-1.5">
-          <Badge variant={"tech"}>Full Stack Project</Badge>
+          <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
+          <p className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
+            Hereby you can save all your YouTube and Twitter links categorically
+            with your personal note, further also can search, share, edit or
+            delete them.
+          </p>
+          <div className="mx-10 mt-7 gap-2 flex">
+            <Badge variant={"tech"}>React</Badge>
+            <Badge variant={"tech"}>Express</Badge>
+            <Badge variant={"tech"}>MongoDB</Badge>
+            <Badge variant={"tech"}>TypeScript</Badge>
+          </div>
+          <div className="mx-10 mt-1 gap-2 flex">
+            <Badge variant={"tech"}>TailwindCSS</Badge>
+            <Badge variant={"tech"}>NodeJS</Badge>
+          </div>
+          <div className="mx-10 mt-1.5">
+            <Badge variant={"tech"}>Full Stack Project</Badge>
+          </div>
         </div>
       </WobbleCard>
     </div>
@@ -170,68 +173,71 @@ export function BrainCard() {
 
 export function SummarizeCard() {
   return (
-    <div className="relative">
+    <div className="relative left-1 md:left-0">
       <CornerPlus />
-      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
+      <WobbleCard containerClassName="max-w-[91vw] col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
         {/* <Image alt="image" src={'https://ik.imagekit.io/mrityunjay/Screenshot%202025-07-30%20114911.png?updatedAt=1753857136729'} width={700} height={200} className="w-full h-auto rounded-md" /> */}
         <div className="w-full flex justify-center items-center">
           <CarouselDemoSummarise />
         </div>
         {/* <div className="w-full flex justify-center items-center"><InfiniteSliderHoverSpeed /></div> */}
-        <div className="flex justify-between items-end">
-          <h2 className="max-w-80 mx-10 text-left text-balance text-base md:text-xl lg:text-2xl capitalize  pt-4 tracking-[-0.015em] text-black">
-            Summarize
-          </h2>
-          <div className="flex gap-2.5 pr-12 mb-2 z-30">
-            <Tooltip>
-              <TooltipTrigger>
-                <Link
-                  href={"https://github.com/mrityunjay-tiwari/summarize"}
-                  target="_blank"
-                >
-                  <Github className="w-4 h-4" />
-                </Link>
 
-                {/* <Button variant="outline">Hover</Button> */}
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>SourceCode</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger>
-                <Link
-                  href={"https://summarize-omega.vercel.app/"}
-                  target="_blank"
-                >
-                  <LinkIcon className="w-4 h-4" />
-                </Link>
-                {/* <Button variant="outline">Hover</Button> */}
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Live Link</p>
-              </TooltipContent>
-            </Tooltip>
+        <div className="-ml-3.5 md:-ml-0">
+          <div className="flex justify-between items-end">
+            <h2 className="max-w-80 mx-10 text-left text-balance text-base md:text-xl lg:text-2xl capitalize  pt-4 tracking-[-0.015em] text-black">
+              Summarize
+            </h2>
+            <div className="flex gap-2.5 pr-12 mb-2 z-30">
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={"https://github.com/mrityunjay-tiwari/summarize"}
+                    target="_blank"
+                  >
+                    <Github className="w-4 h-4" />
+                  </Link>
+
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>SourceCode</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={"https://summarize-omega.vercel.app/"}
+                    target="_blank"
+                  >
+                    <LinkIcon className="w-4 h-4" />
+                  </Link>
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Live Link</p>
+                </TooltipContent>
+              </Tooltip>
+            </div>
           </div>
-        </div>
-        <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
-        <p className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
-          Hereby simply put your PDF and get quick summary as flash cards in one
-          click, also save your summaries on your personal dashboard.
-        </p>
-        <div className="mx-10 mt-7 gap-2 flex">
-          <Badge variant={"tech"}>NextJS</Badge>
-          <Badge variant={"tech"}>TypeScript</Badge>
-          <Badge variant={"tech"}>PostgreSQL</Badge>
-          <Badge variant={"tech"}>Prisma</Badge>
-        </div>
-        <div className="mx-10 mt-1 gap-2 flex">
-          <Badge variant={"tech"}>Langchain</Badge>
-          <Badge variant={"tech"}>TailwindCSS</Badge>
-          <Badge variant={"tech"}>Motion</Badge>
-        </div>
-        <div className="mx-10 mt-1.5">
-          <Badge variant={"tech"}>Full Stack Project</Badge>
+          <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
+          <p className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
+            Hereby simply put your PDF and get quick summary as flash cards in
+            one click, also save your summaries on your personal dashboard.
+          </p>
+          <div className="mx-10 mt-7 gap-2 flex">
+            <Badge variant={"tech"}>NextJS</Badge>
+            <Badge variant={"tech"}>TypeScript</Badge>
+            <Badge variant={"tech"}>PostgreSQL</Badge>
+            <Badge variant={"tech"}>Prisma</Badge>
+          </div>
+          <div className="mx-10 mt-1 gap-2 flex">
+            <Badge variant={"tech"}>Langchain</Badge>
+            <Badge variant={"tech"}>TailwindCSS</Badge>
+            <Badge variant={"tech"}>Motion</Badge>
+          </div>
+          <div className="mx-10 mt-1.5">
+            <Badge variant={"tech"}>Full Stack Project</Badge>
+          </div>
         </div>
       </WobbleCard>
     </div>
@@ -240,61 +246,66 @@ export function SummarizeCard() {
 
 export function SomiConveyorBelt() {
   return (
-    <div className="relative">
+    <div className="relative left-1 md:left-0 ">
       <CornerPlus />
-      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
+      <WobbleCard containerClassName="max-w-[91vw] sm:max-w-none col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
         {/* <Image alt="image" src={'https://ik.imagekit.io/mrityunjay/Screenshot%202025-07-30%20114911.png?updatedAt=1753857136729'} width={700} height={200} className="w-full h-auto rounded-md" /> */}
         <div className="w-full flex justify-center items-center">
           <CarouselDemoSomi />
         </div>
         {/* <div className="w-full flex justify-center items-center"><InfiniteSliderHoverSpeed /></div> */}
-        <div className="flex justify-between items-end">
-          <h2 className="max-w-80 mx-10 text-left text-balance text-base md:text-xl lg:text-2xl capitalize  pt-4 tracking-[-0.015em] text-black">
-            Somi Conveyor Belt
-          </h2>
-          <div className="flex gap-2.5 pr-12 mb-2 z-30">
-            <Tooltip>
-              <TooltipTrigger>
-                <Link
-                  href={"https://github.com/mrityunjay-tiwari/somiinvestor"}
-                  target="_blank"
-                >
-                  <Github className="w-4 h-4" />
-                </Link>
+        <div className="-ml-3.5 md:-ml-0">
+          <div className="flex justify-between items-end">
+            <h2 className="max-w-80 mx-10 text-left text-balance text-base md:text-xl lg:text-2xl capitalize  pt-4 tracking-[-0.015em] text-black">
+              Somi Conveyor Belt
+            </h2>
+            <div className="flex gap-2.5 pr-12 mb-2 z-30">
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={"https://github.com/mrityunjay-tiwari/somiinvestor"}
+                    target="_blank"
+                  >
+                    <Github className="w-4 h-4" />
+                  </Link>
 
-                {/* <Button variant="outline">Hover</Button> */}
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>SourceCode</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger>
-                <Link href={"https://somiinvestor.vercel.app/"} target="_blank">
-                  <LinkIcon className="w-4 h-4" />
-                </Link>
-                {/* <Button variant="outline">Hover</Button> */}
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Live Link</p>
-              </TooltipContent>
-            </Tooltip>
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>SourceCode</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={"https://somiinvestor.vercel.app/"}
+                    target="_blank"
+                  >
+                    <LinkIcon className="w-4 h-4" />
+                  </Link>
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Live Link</p>
+                </TooltipContent>
+              </Tooltip>
+            </div>
           </div>
-        </div>
-        <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
-        <h1 className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
-          Hereby I revamped (redesigned and developed) the entire official
-          website of Somi Conveyor Belt.
-          <div className="text-red-500 text-xs">{`*Currently working on it's responsiveness`}</div>
-        </h1>
-        <div className="mx-10 mt-7 gap-2 flex">
-          <Badge variant={"tech"}>NextJS</Badge>
-          <Badge variant={"tech"}>TypeScript</Badge>
-          <Badge variant={"tech"}>TailwindCSS</Badge>
-          <Badge variant={"tech"}>Motion</Badge>
-        </div>
-        <div className="mx-10 mt-1.5">
-          <Badge variant={"tech"}>Frontend Project</Badge>
+          <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
+          <h1 className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
+            Hereby I revamped (redesigned and developed) the entire official
+            website of Somi Conveyor Belt.
+            <div className="text-red-500 text-xs">{`*Currently working on it's responsiveness`}</div>
+          </h1>
+          <div className="mx-10 mt-7 gap-2 flex">
+            <Badge variant={"tech"}>NextJS</Badge>
+            <Badge variant={"tech"}>TypeScript</Badge>
+            <Badge variant={"tech"}>TailwindCSS</Badge>
+            <Badge variant={"tech"}>Motion</Badge>
+          </div>
+          <div className="mx-10 mt-1.5">
+            <Badge variant={"tech"}>Frontend Project</Badge>
+          </div>
         </div>
       </WobbleCard>
     </div>
@@ -303,63 +314,66 @@ export function SomiConveyorBelt() {
 
 export function CultCouncil() {
   return (
-    <div className="relative">
+    <div className="relative left-1 md:left-0">
       <CornerPlus />
-      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
+      <WobbleCard containerClassName="max-w-[91vw] col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
         {/* <Image alt="image" src={'https://ik.imagekit.io/mrityunjay/Screenshot%202025-07-30%20114911.png?updatedAt=1753857136729'} width={700} height={200} className="w-full h-auto rounded-md" /> */}
         <div className="w-full flex justify-center items-center">
           <CarouselDemoCult />
         </div>
         {/* <div className="w-full flex justify-center items-center"><InfiniteSliderHoverSpeed /></div> */}
-        <div className="flex justify-between items-end">
-          <h2 className="max-w-80 mx-10 text-left  md:text-xl lg:text-2xl capitalize  pt-4 tracking-[-0.015em] text-black">
-            Cultural Council, <span className="text-sm">IIT BHU </span>
-          </h2>
-          <div className="flex gap-2.5 pr-12 mb-2 z-30">
-            <Tooltip>
-              <TooltipTrigger>
-                <Link
-                  href={"https://github.com/mrityunjay-tiwari/cult-council"}
-                  target="_blank"
-                >
-                  <Github className="w-4 h-4" />
-                </Link>
 
-                {/* <Button variant="outline">Hover</Button> */}
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>SourceCode</p>
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger>
-                <Link
-                  href={"https://cult-council-mhwi.vercel.app/"}
-                  target="_blank"
-                >
-                  <LinkIcon className="w-4 h-4" />
-                </Link>
-                {/* <Button variant="outline">Hover</Button> */}
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Live Link</p>
-              </TooltipContent>
-            </Tooltip>
+        <div className="-ml-3.5 md:-ml-0">
+          <div className="flex justify-between items-end">
+            <h2 className="max-w-80 mx-10 text-left  md:text-xl lg:text-2xl capitalize  pt-4 tracking-[-0.015em] text-black">
+              Cultural Council, <span className="text-sm">IIT BHU </span>
+            </h2>
+            <div className="flex gap-2.5 pr-12 mb-2 z-30">
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={"https://github.com/mrityunjay-tiwari/cult-council"}
+                    target="_blank"
+                  >
+                    <Github className="w-4 h-4" />
+                  </Link>
+
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>SourceCode</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={"https://cult-council-mhwi.vercel.app/"}
+                    target="_blank"
+                  >
+                    <LinkIcon className="w-4 h-4" />
+                  </Link>
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Live Link</p>
+                </TooltipContent>
+              </Tooltip>
+            </div>
           </div>
-        </div>
-        <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
-        <p className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
-          Hereby I designed and developed the entire website of Cultural
-          Council, IIT (BHU), Varanasi.
-        </p>
-        <div className="mx-10 mt-7 gap-2 flex">
-          <Badge variant={"tech"}>React</Badge>
-          <Badge variant={"tech"}>JavaScript</Badge>
-          <Badge variant={"tech"}>TailwindCSS</Badge>
-          <Badge variant={"tech"}>Motion</Badge>
-        </div>
-        <div className="mx-10 mt-1.5">
-          <Badge variant={"tech"}>Frontend Project</Badge>
+          <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
+          <p className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
+            Hereby I designed and developed the entire website of Cultural
+            Council, IIT (BHU), Varanasi.
+          </p>
+          <div className="mx-10 mt-7 gap-2 flex">
+            <Badge variant={"tech"}>React</Badge>
+            <Badge variant={"tech"}>JavaScript</Badge>
+            <Badge variant={"tech"}>TailwindCSS</Badge>
+            <Badge variant={"tech"}>Motion</Badge>
+          </div>
+          <div className="mx-10 mt-1.5">
+            <Badge variant={"tech"}>Frontend Project</Badge>
+          </div>
         </div>
       </WobbleCard>
     </div>
