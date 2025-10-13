@@ -108,7 +108,7 @@ export function BrainCard() {
       <WobbleCard containerClassName="max-w-[91vw] col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
         {/* <Image alt="image" src={'https://ik.imagekit.io/mrityunjay/Screenshot%202025-07-30%20114911.png?updatedAt=1753857136729'} width={700} height={200} className="w-full h-auto rounded-md" /> */}
         <div className="w-full flex justify-center items-center">
-          <CarouselDemoSomi />
+          <CarouselDemoYourBrain />
         </div>
         {/* <div className="w-full flex justify-center items-center"><InfiniteSliderHoverSpeed /></div> */}
 
