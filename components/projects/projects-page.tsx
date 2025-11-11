@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { BrainCard, CultCouncil, SomiConveyorBelt, SummarizeCard, YourBrainCard } from "./project-card";
+import { BrainCard, CultCouncil, MediumCard, SomiConveyorBelt, SummarizeCard, YourBrainCard } from "./project-card";
 import TypewriterTitle from "./project-title";
 
 export default function ProjectPage() {
@@ -12,6 +12,7 @@ export default function ProjectPage() {
         <SummarizeCard />
         <SomiConveyorBelt />
         <CultCouncil />
+        <MediumCard />
       </div>
     </section>
   )
