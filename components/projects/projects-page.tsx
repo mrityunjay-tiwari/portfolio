@@ -10,9 +10,9 @@ export default function ProjectPage() {
       <div className="max-w-[950px]  px-4 sm:px-8 md:px-0 mx-20 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-10 md:gap-x-28 gap-y-14 place-items-center">
         <BrainCard />
         <SummarizeCard />
+        <MediumCard />
         <SomiConveyorBelt />
         <CultCouncil />
-        <MediumCard />
       </div>
     </section>
   )

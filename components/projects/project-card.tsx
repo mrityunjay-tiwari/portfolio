@@ -219,8 +219,8 @@ export function MediumCard() {
           <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
           <p className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
             {`This npm package let's you fetch all the info (Title, Author's Name, Avatar, 
-            Hero Image, Published Date, Clap, Comments Count) about any Medium article 
-            using just the article URL. `}
+            Publish Date, Clap, Comments Count etc.) about any Medium article 
+            using just the article URL.`}
             Hereby you can save all your YouTube and Twitter links categorically
             with your personal note, further also can search, share, edit or
             delete them.
