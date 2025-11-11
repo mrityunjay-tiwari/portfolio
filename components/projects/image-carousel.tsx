@@ -70,7 +70,7 @@ export function CarouselDemoMedium() {
 const images = [
   {
     key:0,
-    link: "https://ik.imagekit.io/mrityunjay/npm.jpg?updatedAt=1762848832179"
+    link: "https://ik.imagekit.io/mrityunjay/npm.jpg?updatedAt=1762855092662"
   }
 ]
   return (
