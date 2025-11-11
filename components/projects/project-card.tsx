@@ -13,6 +13,7 @@ import {WobbleCard} from "../aceternity/wobble-card";
 import {Badge} from "../ui/badge";
 import {
   CarouselDemoCult,
+  CarouselDemoMedium,
   CarouselDemoSomi,
   CarouselDemoSummarise,
   CarouselDemoYourBrain,
@@ -164,6 +165,76 @@ export function BrainCard() {
           </div>
           <div className="mx-10 mt-1.5">
             <Badge variant={"tech"}>Full Stack Project</Badge>
+          </div>
+        </div>
+      </WobbleCard>
+    </div>
+  );
+}
+export function MediumCard() {
+  return (
+    <div className="relative left-0.5 md:left-0">
+      <CornerPlus />
+      <WobbleCard containerClassName="max-w-[91vw] col-span-1 min-h-[300px] bg-zinc-50/50 border-l border-t">
+        {/* <Image alt="image" src={'https://ik.imagekit.io/mrityunjay/Screenshot%202025-07-30%20114911.png?updatedAt=1753857136729'} width={700} height={200} className="w-full h-auto rounded-md" /> */}
+        <div className="w-full flex justify-center items-center">
+          <CarouselDemoMedium />
+        </div>
+        {/* <div className="w-full flex justify-center items-center"><InfiniteSliderHoverSpeed /></div> */}
+
+        <div className="-ml-3.5 md:-ml-0">
+          <div className="flex justify-between items-end">
+            <h2 className="max-w-80 mx-10 text-left text-balance text-base md:text-xl lg:text-2xl capitalize  pt-4 tracking-[-0.015em] text-black">
+              NPM Package 
+            </h2>
+            <div className="flex gap-2.5 pr-12 mb-2 z-30">
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={"https://github.com/mrityunjay-tiwari/medium-info-api"}
+                    target="_blank"
+                  >
+                    <Github className="w-4 h-4" />
+                  </Link>
+
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>SourceCode</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link href={"https://www.npmjs.com/search?q=medium-info-api"} target="_blank">
+                    <LinkIcon className="w-4 h-4" />
+                  </Link>
+                  {/* <Button variant="outline">Hover</Button> */}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Live Link</p>
+                </TooltipContent>
+              </Tooltip>
+            </div>
+          </div>
+          <div className="max-w-[26rem] h-[0.5px] bg-neutral-300 mx-10"></div>
+          <p className="mt-4 mx-10 max-w-[26rem] text-sm text-neutral-900 text-justify font-light">
+            {`This npm package let's you fetch all the info (Title, Author's Name, Avatar, 
+            Hero Image, Published Date, Clap, Comments Count) about any Medium article 
+            using just the article URL. `}
+            Hereby you can save all your YouTube and Twitter links categorically
+            with your personal note, further also can search, share, edit or
+            delete them.
+          </p>
+          <div className="mx-10 mt-7 gap-2 flex">
+            <Badge variant={"tech"}>Express</Badge>
+            <Badge variant={"tech"}>TypeScript</Badge>
+            <Badge variant={"tech"}>Cheerio</Badge>
+          </div>
+          <div className="mx-10 mt-1 gap-2 flex">
+            <Badge variant={"tech"}>Playwright</Badge>
+          </div>
+          <div className="mx-10 mt-1.5">
+            <Badge variant={"tech"}>Backend Project</Badge>
           </div>
         </div>
       </WobbleCard>

@@ -63,6 +63,42 @@ const images = [
   )
 }
 
+export function CarouselDemoMedium() {
+//     const plugin = React.useRef(
+//     Autoplay({ delay: 2000, stopOnInteraction: true })
+//   )
+const images = [
+  {
+    key:0,
+    link: "https://ik.imagekit.io/mrityunjay/npm.jpg?updatedAt=1762847987427"
+  }
+]
+  return (
+    <Carousel className="w-full mx-7" plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}>
+      <CarouselContent>
+        {images.map((imgg, index) => (
+          <CarouselItem key={index}>
+            <div className="">
+              <Card className="rounded-sm">
+                <CardContent className="flex  items-center justify-center">
+                  {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
+                  <Image alt="image" src={imgg.link} width={700} height={200} className="w-full h-auto" />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  )
+}
+
 export function CarouselDemoSummarise() {
 //     const plugin = React.useRef(
 //     Autoplay({ delay: 2000, stopOnInteraction: true })
