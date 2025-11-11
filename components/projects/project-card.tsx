@@ -229,8 +229,6 @@ export function MediumCard() {
             <Badge variant={"tech"}>Express</Badge>
             <Badge variant={"tech"}>TypeScript</Badge>
             <Badge variant={"tech"}>Cheerio</Badge>
-          </div>
-          <div className="mx-10 mt-1 gap-2 flex">
             <Badge variant={"tech"}>Playwright</Badge>
           </div>
           <div className="mx-10 mt-1.5">
